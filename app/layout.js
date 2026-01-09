@@ -21,9 +21,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50`}
-      >
+      <head>
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="googled522f1442b73c862"
+        />
+      </head>
+
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50`}>
         <header className="border-b bg-white">
           <div className="mx-auto max-w-6xl flex justify-between items-center p-4">
             <h1 className="text-xl font-semibold">The Cozy Corner</h1>
@@ -43,6 +49,5 @@ export default function RootLayout({ children }) {
         </footer>
       </body>
     </html>
-    
   );
 }
